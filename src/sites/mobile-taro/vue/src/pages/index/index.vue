@@ -15,8 +15,8 @@
 import { ref } from 'vue';
 import './index.scss';
 import Demo from '../../../../../../packages/__VUE/button/demo.vue';
-// import Button from '../../../../../../packages/__VUE/button/index.taro.vue';
-import Button from '../button/index.taro.vue';
+import Button from '../../../../../../packages/__VUE/button/index.taro.vue';
+// import Button from '../button/index.taro.vue';
 
 export default {
   components: {
