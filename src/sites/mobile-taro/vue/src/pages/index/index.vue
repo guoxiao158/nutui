@@ -7,7 +7,7 @@
     <nut-button type="danger">危险按钮</nut-button>
     <nut-button type="warning">警告按钮</nut-button>
     <nut-button type="success">成功按钮</nut-button>
-    <test>solt</test>
+    <test :title="123">solt</test>
   </view>
 </template>
 
@@ -16,8 +16,8 @@ import { ref } from 'vue';
 import './index.scss';
 // import Button from '../../../../../../packages/__VUE/button/index.taro.vue';
 import Button from '../button/index.taro.vue';
-// import test from '../../../../test.vue';
-import test from './test.vue';
+import test from '../../../../test.vue';
+// import test from './test.vue';
 export default {
   components: {
     'nut-button': Button,
