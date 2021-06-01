@@ -1,7 +1,7 @@
 <template>
   <view class="test">
     <text>{{ msg }}</text>
-    <text>{{ title }}</text>
+    <view @click="titleclick">{{ title }}</view>
     <slot></slot>
   </view>
 </template>
@@ -14,8 +14,12 @@ export default {
   },
   setup() {
     const msg = ref('test');
+    const titleclick = () => {
+      console.log('title click');
+    };
     return {
-      msg
+      msg,
+      titleclick
     };
   }
 };
